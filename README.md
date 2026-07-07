@@ -1,27 +1,127 @@
-# AWS Data Engineering Project
+# 🚀 AWS Data Engineering Project
 
-## Overview
+## 📌 Project Overview
 
-This project demonstrates an end-to-end AWS Data Engineering pipeline using serverless AWS services.
+This project demonstrates an end-to-end AWS Data Engineering pipeline built using serverless AWS services. The pipeline ingests CSV files from Amazon S3, transforms the data using AWS Glue, stores the output in Parquet format, queries it using Amazon Athena, and automates execution with AWS Lambda and Amazon EventBridge.
 
-## AWS Services Used
+---
+
+## 🏗️ Architecture
+
+```
+CSV Files
+    │
+    ▼
+Amazon S3
+    │
+    ▼
+AWS Glue Crawler
+    │
+    ▼
+Glue Data Catalog
+    │
+    ▼
+Glue Studio ETL Job
+    │
+    ▼
+Parquet Files (Amazon S3)
+    │
+    ▼
+Amazon Athena
+    │
+    ▼
+AWS Lambda
+    │
+    ▼
+Amazon EventBridge
+```
+
+---
+
+## ☁️ AWS Services Used
 
 - Amazon S3
-- AWS Glue
-- Glue Data Catalog
-- Glue Studio
+- AWS Glue Crawler
+- AWS Glue Data Catalog
+- AWS Glue Studio
 - Amazon Athena
 - AWS Lambda
 - Amazon EventBridge
-- IAM
+- AWS IAM
 
-## Project Workflow
+---
 
-1. Upload CSV files to Amazon S3
-2. Crawl data using AWS Glue Crawler
-3. Create Glue Data Catalog tables
-4. Transform data using Glue Studio
-5. Store transformed data in Parquet format
-6. Query data using Amazon Athena
-7. Automate processing with AWS Lambda
-8. Schedule jobs using Amazon EventBridge
+## 📂 Project Structure
+
+```
+aws-data-engineering-project/
+│
+├── architecture/
+├── datasets/
+├── documentation/
+├── glue-job/
+├── lambda/
+├── screenshots/
+├── sql/
+├── README.md
+└── .gitignore
+```
+
+---
+
+## 🔄 Project Workflow
+
+1. Upload CSV files to Amazon S3.
+2. Crawl the data using AWS Glue Crawler.
+3. Create metadata in the Glue Data Catalog.
+4. Build an ETL job using AWS Glue Studio.
+5. Transform and clean the data.
+6. Store the output as Parquet files in Amazon S3.
+7. Query the transformed data using Amazon Athena.
+8. Trigger automation with AWS Lambda.
+9. Schedule execution using Amazon EventBridge.
+
+---
+
+## 📊 Dataset
+
+Sample sales datasets:
+
+- sales.csv
+- sales1.csv
+- sales2.csv
+- sales3.csv
+
+---
+
+## 💡 Skills Demonstrated
+
+- ETL Pipeline Development
+- Data Engineering
+- Data Lake Architecture
+- AWS Glue
+- SQL Transformations
+- Amazon Athena
+- AWS Lambda
+- Amazon EventBridge
+- Serverless Computing
+- Data Catalog
+- Parquet File Format
+
+---
+
+## 🚀 Future Enhancements
+
+- Add CloudWatch monitoring
+- Add SNS email notifications
+- Integrate AWS Step Functions
+- Add data quality validation
+- Build a real-time streaming pipeline using Amazon Kinesis
+
+---
+
+## 👨‍💻 Author
+
+**Sameer Singh**
+
+Learning AWS Data Engineering through hands-on projects.
