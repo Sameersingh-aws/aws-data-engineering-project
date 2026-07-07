@@ -1,0 +1,11 @@
+Order_ID,Order_Date,Customer_Name,City,Product,Category,Quantity,Price
+4001,2026-09-01,Aditya,Bhubaneswar,Laptop,Electronics,1,75000
+4002,2026-09-01,Sanya,Delhi,Phone,Electronics,2,36000
+4003,2026-09-02,Rahul,Mumbai,Desk,Furniture,1,9500
+4004,2026-09-02,Priya,Pune,Chair,Furniture,3,4100
+4005,2026-09-03,Aman,Hyderabad,Keyboard,Accessories,2,2200
+4006,2026-09-03,Neha,Chennai,Mouse,Accessories,4,1200
+4007,2026-09-04,Ritika,Kolkata,Printer,Office,1,15500
+4008,2026-09-04,Karan,Jaipur,Monitor,Electronics,2,15000
+4009,2026-09-05,Vikas,Lucknow,Insurance,Finance,1,27000
+4010,2026-09-05,Meera,Ahmedabad,Mutual Fund,Finance,2,19000

@@ -1,0 +1,11 @@
+Order_ID,Order_Date,Customer_Name,City,Product,Category,Quantity,Price
+2001,2026-07-01,Anita,Bhubaneswar,Mutual Fund,Finance,2,15000
+2002,2026-07-01,Rohit,Cuttack,Insurance,Finance,1,22000
+2003,2026-07-02,Sneha,Pune,Laptop,Electronics,1,68000
+2004,2026-07-02,Arjun,Hyderabad,Monitor,Electronics,2,12000
+2005,2026-07-03,Meera,Chennai,Keyboard,Accessories,4,1800
+2006,2026-07-03,Vikram,Mumbai,Mouse,Accessories,5,900
+2007,2026-07-04,Neha,Delhi,Phone,Electronics,3,32000
+2008,2026-07-04,Karan,Kolkata,Printer,Office,1,14500
+2009,2026-07-05,Pooja,Jaipur,Desk,Furniture,2,8500
+2010,2026-07-05,Aman,Lucknow,Chair,Furniture,6,3500
