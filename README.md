@@ -1,8 +1,10 @@
 # 🚀 AWS Data Engineering Project
 
-## 📌 Project Overview
+## 📖 Project Overview
 
-This project demonstrates an end-to-end AWS Data Engineering pipeline built using serverless AWS services. The pipeline ingests CSV files from Amazon S3, transforms the data using AWS Glue, stores the output in Parquet format, queries it using Amazon Athena, and automates execution with AWS Lambda and Amazon EventBridge.
+This project demonstrates an end-to-end AWS Data Engineering ETL pipeline using serverless AWS services. Raw CSV files are uploaded to Amazon S3, cataloged using AWS Glue Crawler, transformed with AWS Glue Studio, stored in Parquet format, and queried using Amazon Athena.
+
+---
 
 ## 🔄 Project Workflow
 
@@ -29,27 +31,29 @@ Amazon Athena
       │
       ▼
 SQL Query Results
+```
 
-## ☁️ AWS Services Used
-- Amazon S3
-- AWS Glue Crawler
-- AWS Glue Data Catalog
-- AWS Glue Studio
-- Amazon Athena
-- AWS Lambda
-- Amazon EventBridge
-- AWS IAM
+---
+
+## 🛠️ AWS Services Used
+
+* Amazon S3
+* AWS Glue Crawler
+* AWS Glue Data Catalog
+* AWS Glue Studio
+* Amazon Athena
+* AWS IAM
 
 ---
 
 ## 📂 Project Structure
-```
+
+```text
 aws-data-engineering-project/
 │
 ├── architecture/
-├── datasets/
+├── dataset/
 ├── documentation/
-├── glue-job/
 ├── lambda/
 ├── screenshots/
 ├── sql/
@@ -59,54 +63,74 @@ aws-data-engineering-project/
 
 ---
 
-## 🔄 Project Workflow
+## 🏗️ Architecture Diagram
 
-1. Upload CSV files to Amazon S3.
-2. Crawl the data using AWS Glue Crawler.
-3. Create metadata in the Glue Data Catalog.
-4. Build an ETL job using AWS Glue Studio.
-5. Transform and clean the data.
-6. Store the output as Parquet files in Amazon S3.
-7. Query the transformed data using Amazon Athena.
-8. Trigger automation with AWS Lambda.
-9. Schedule execution using Amazon EventBridge.
+Add your architecture image here.
+
+```markdown
+![Architecture](architecture/architecture.jpeg)
+```
+
+*(Replace the filename with your actual image name.)*
 
 ---
 
-## 📊 Dataset
-Sample sales datasets:
+## 📸 Project Screenshots
 
-- sales.csv
-- sales1.csv
-- sales2.csv
-- sales3.csv
+* Amazon S3 Bucket
+* AWS Glue Crawler
+* AWS Glue Data Catalog
+* AWS Glue Studio ETL Job
+* AWS Glue Job Execution
+* Amazon Athena Query Results
 
 ---
 
-**## 💡 Skills Demonstrated
-**
-- ETL Pipeline Development
-- Data Engineering
-- Data Lake Architecture
-- AWS Glue
-- SQL Transformations
-- Amazon Athena
-- AWS Lambda
-- Amazon EventBridge
-- Serverless Computing
-- Data Catalog
-- Parquet File Format
+## 🌟 Project Highlights
+
+* Built a complete serverless ETL pipeline using AWS.
+* Converted CSV data into Parquet format.
+* Used AWS Glue Crawler to generate metadata automatically.
+* Performed data transformation using AWS Glue Studio.
+* Queried transformed data with Amazon Athena.
+* Organized the project with documentation, architecture, SQL scripts, and screenshots.
+
+---
+
+## 💡 Skills Demonstrated
+
+* AWS Data Engineering
+* ETL Pipeline Development
+* Amazon S3
+* AWS Glue
+* AWS Glue Crawler
+* AWS Glue Studio
+* Amazon Athena
+* SQL
+* Parquet File Format
+* Git & GitHub
+
+---
+
+## 📚 Learning Outcomes
+
+* Building an end-to-end ETL pipeline on AWS
+* Working with AWS Glue Crawler and Data Catalog
+* Transforming data using AWS Glue Studio
+* Converting CSV files into Parquet format
+* Querying data using Amazon Athena
+* Organizing and documenting a professional GitHub project
 
 ---
 
 ## 🚀 Future Enhancements
 
-- Automate the ETL pipeline using AWS Lambda and Amazon EventBridge.
-- Add data quality validation before loading the transformed data.
-- Store processed data in Amazon Redshift for data warehousing.
-- Create interactive dashboards using Amazon QuickSight.
-- Implement monitoring and alerts with Amazon CloudWatch.
-- Orchestrate multiple ETL jobs using AWS Step Functions.
+* Automate the pipeline using AWS Lambda and Amazon EventBridge.
+* Add data quality validation before transformation.
+* Store processed data in Amazon Redshift.
+* Create dashboards using Amazon QuickSight.
+* Monitor the pipeline with Amazon CloudWatch.
+* Orchestrate workflows using AWS Step Functions.
 
 ---
 
@@ -114,4 +138,4 @@ Sample sales datasets:
 
 **Sameer Singh**
 
-Learning AWS Data Engineering through hands-on projects.
+Aspiring AWS Data Engineer | Learning through hands-on cloud and data engineering projects.
