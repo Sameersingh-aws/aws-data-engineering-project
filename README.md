@@ -4,42 +4,34 @@
 
 This project demonstrates an end-to-end AWS Data Engineering pipeline built using serverless AWS services. The pipeline ingests CSV files from Amazon S3, transforms the data using AWS Glue, stores the output in Parquet format, queries it using Amazon Athena, and automates execution with AWS Lambda and Amazon EventBridge.
 
----
+## 🔄 Project Workflow
 
-## 🏗️ Architecture
-
-```
-CSV Files
-    │
-    ▼
+```text
+Raw CSV Files
+      │
+      ▼
 Amazon S3
-    │
-    ▼
+      │
+      ▼
 AWS Glue Crawler
-    │
-    ▼
-Glue Data Catalog
-    │
-    ▼
-Glue Studio ETL Job
-    │
-    ▼
-Parquet Files (Amazon S3)
-    │
-    ▼
+      │
+      ▼
+AWS Glue Data Catalog
+      │
+      ▼
+AWS Glue Studio ETL Job
+      │
+      ▼
+Parquet Output (Amazon S3)
+      │
+      ▼
 Amazon Athena
-    │
-    ▼
-AWS Lambda
-    │
-    ▼
-Amazon EventBridge
-```
+      │
+      ▼
+SQL Query Results
 
----
-
-## ☁️ AWS Services Used
-
+**## ☁️ AWS Services Used
+**
 - Amazon S3
 - AWS Glue Crawler
 - AWS Glue Data Catalog
@@ -51,8 +43,8 @@ Amazon EventBridge
 
 ---
 
-## 📂 Project Structure
-
+**## 📂 Project Structure
+**
 ```
 aws-data-engineering-project/
 │
@@ -69,8 +61,8 @@ aws-data-engineering-project/
 
 ---
 
-## 🔄 Project Workflow
-
+**## 🔄 Project Workflow
+**
 1. Upload CSV files to Amazon S3.
 2. Crawl the data using AWS Glue Crawler.
 3. Create metadata in the Glue Data Catalog.
@@ -83,8 +75,8 @@ aws-data-engineering-project/
 
 ---
 
-## 📊 Dataset
-
+**## 📊 Dataset
+**
 Sample sales datasets:
 
 - sales.csv
@@ -94,8 +86,8 @@ Sample sales datasets:
 
 ---
 
-## 💡 Skills Demonstrated
-
+**## 💡 Skills Demonstrated
+**
 - ETL Pipeline Development
 - Data Engineering
 - Data Lake Architecture
@@ -112,11 +104,12 @@ Sample sales datasets:
 
 ## 🚀 Future Enhancements
 
-- Add CloudWatch monitoring
-- Add SNS email notifications
-- Integrate AWS Step Functions
-- Add data quality validation
-- Build a real-time streaming pipeline using Amazon Kinesis
+- Automate the ETL pipeline using AWS Lambda and Amazon EventBridge.
+- Add data quality validation before loading the transformed data.
+- Store processed data in Amazon Redshift for data warehousing.
+- Create interactive dashboards using Amazon QuickSight.
+- Implement monitoring and alerts with Amazon CloudWatch.
+- Orchestrate multiple ETL jobs using AWS Step Functions.
 
 ---
 
