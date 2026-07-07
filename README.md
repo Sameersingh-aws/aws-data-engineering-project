@@ -30,8 +30,7 @@ Amazon Athena
       ▼
 SQL Query Results
 
-**## ☁️ AWS Services Used
-**
+## ☁️ AWS Services Used
 - Amazon S3
 - AWS Glue Crawler
 - AWS Glue Data Catalog
@@ -43,8 +42,7 @@ SQL Query Results
 
 ---
 
-**## 📂 Project Structure
-**
+## 📂 Project Structure
 ```
 aws-data-engineering-project/
 │
@@ -61,8 +59,8 @@ aws-data-engineering-project/
 
 ---
 
-**## 🔄 Project Workflow
-**
+## 🔄 Project Workflow
+
 1. Upload CSV files to Amazon S3.
 2. Crawl the data using AWS Glue Crawler.
 3. Create metadata in the Glue Data Catalog.
@@ -75,8 +73,7 @@ aws-data-engineering-project/
 
 ---
 
-**## 📊 Dataset
-**
+## 📊 Dataset
 Sample sales datasets:
 
 - sales.csv
