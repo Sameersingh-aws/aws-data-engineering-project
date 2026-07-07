@@ -1,1 +1,5 @@
-This folder contains the AWS architecture diagram.
+## Architecture Documentation
+
+Detailed architecture explanation:
+
+- [Architecture Guide](architecture/architecture.md)
