@@ -81,7 +81,7 @@ aws-data-engineering-project/
 
 ### Amazon Athena
 
-![Athena](screenshots/athena-query-results.jpeg)
+![Athena](screenshots/athena-query-result.jpeg)
 
 ---
 
