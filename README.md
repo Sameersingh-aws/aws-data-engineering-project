@@ -10,7 +10,51 @@ The pipeline is event-driven using AWS Lambda, catalogs data with AWS Glue Crawl
 
 ## Architecture
 
-![Architecture](architecture/architecture.png)
+          +----------------+
+          |    User        |
+          +----------------+
+                  |
+                  | Upload CSV
+                  v
+      +-------------------------+
+      | Amazon S3 (raw folder)  |
+      +-------------------------+
+                  |
+          S3 Event Trigger
+                  |
+                  v
+      +-------------------------+
+      | AWS Lambda              |
+      | Start Glue Crawler      |
+      +-------------------------+
+                  |
+                  v
+      +-------------------------+
+      | AWS Glue Crawler        |
+      +-------------------------+
+                  |
+                  v
+      +-------------------------+
+      | Glue Data Catalog       |
+      +-------------------------+
+                  |
+                  v
+      +-------------------------+
+      | Glue Studio ETL Job     |
+      | Select Fields           |
+      | Convert to Parquet      |
+      +-------------------------+
+                  |
+                  v
+      +-------------------------+
+      | Amazon S3 (processed/)  |
+      +-------------------------+
+                  |
+                  v
+      +-------------------------+
+      | Amazon Athena           |
+      | SQL Analysis            |
+      +-------------------------+
 
 ---
 
