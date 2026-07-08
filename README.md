@@ -61,27 +61,27 @@ aws-data-engineering-project/
 
 ### Amazon S3
 
-![S3](screenshots/s3-raw-files.png)
+![S3](screenshots/s3-bucket.jpeg)
 
 ### AWS Lambda
 
-![Lambda](screenshots/lambda-function.png)
+![Lambda](screenshots/lambda-succes.png.jpeg)
 
 ### Glue Crawler
 
-![Crawler](screenshots/crawler.png)
+![Crawler](screenshots/crawler.jpeg)
 
 ### Glue ETL Job
 
-![Glue Job](screenshots/glue-job.png)
+![Glue Job](screenshots/glue-studio-job.jpeg)
 
 ### Processed Parquet Files
 
-![Parquet](screenshots/processed-parquet.png)
+![Parquet](screenshots/processed-parquet.jpeg)
 
 ### Amazon Athena
 
-![Athena](screenshots/athena-query-results.png)
+![Athena](screenshots/athena-query-results.jpeg)
 
 ---
 
