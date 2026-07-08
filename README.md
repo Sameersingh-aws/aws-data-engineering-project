@@ -1,141 +1,147 @@
-# 🚀 AWS Data Engineering Project
+# End-to-End AWS Data Engineering Project
 
-## 📖 Project Overview
+## Project Overview
 
-This project demonstrates an end-to-end AWS Data Engineering ETL pipeline using serverless AWS services. Raw CSV files are uploaded to Amazon S3, cataloged using AWS Glue Crawler, transformed with AWS Glue Studio, stored in Parquet format, and queried using Amazon Athena.
+This project demonstrates an end-to-end AWS Data Engineering pipeline that automatically processes CSV files uploaded to Amazon S3.
+
+The pipeline is event-driven using AWS Lambda, catalogs data with AWS Glue Crawler, transforms CSV files into Parquet format using AWS Glue ETL, and enables SQL analytics through Amazon Athena.
 
 ---
 
-## 🔄 Project Workflow
+## Architecture
 
-```text
-Raw CSV Files
-      │
-      ▼
-Amazon S3
-      │
-      ▼
-AWS Glue Crawler
-      │
-      ▼
-AWS Glue Data Catalog
-      │
-      ▼
-AWS Glue Studio ETL Job
-      │
-      ▼
-Parquet Output (Amazon S3)
-      │
-      ▼
-Amazon Athena
-      │
-      ▼
-SQL Query Results
+![Architecture](architecture/architecture.png)
+
+---
+
+## AWS Services Used
+
+- Amazon S3
+- AWS Lambda
+- AWS Glue Crawler
+- AWS Glue Data Catalog
+- AWS Glue Studio (Visual ETL)
+- Amazon Athena
+- IAM
+- CloudWatch
+
+---
+
+## Project Workflow
+
+1. Upload CSV files to the **raw/** folder in Amazon S3.
+2. Amazon S3 triggers an AWS Lambda function.
+3. Lambda starts the AWS Glue Crawler.
+4. Glue Crawler updates the Glue Data Catalog.
+5. AWS Glue ETL Job reads the catalog table.
+6. Data is transformed into Parquet format.
+7. Output is stored in the **processed/** folder in Amazon S3.
+8. Amazon Athena queries the processed data using SQL.
+
+---
+
+## Repository Structure
+
 ```
-
----
-
-## 🛠️ AWS Services Used
-
-* Amazon S3
-* AWS Glue Crawler
-* AWS Glue Data Catalog
-* AWS Glue Studio
-* Amazon Athena
-* AWS IAM
-
----
-
-## 📂 Project Structure
-
-```text
 aws-data-engineering-project/
 │
 ├── architecture/
 ├── dataset/
 ├── documentation/
+├── glue-job/
 ├── lambda/
 ├── screenshots/
 ├── sql/
-├── README.md
-└── .gitignore
+└── README.md
 ```
 
 ---
 
-## 🏗️ Architecture Diagram
+## Screenshots
 
-Add your architecture image here.
+### Amazon S3
 
-```markdown
-![Architecture](architecture/architecture.jpeg)
+![S3](screenshots/s3-raw-files.png)
+
+### AWS Lambda
+
+![Lambda](screenshots/lambda-function.png)
+
+### Glue Crawler
+
+![Crawler](screenshots/crawler.png)
+
+### Glue ETL Job
+
+![Glue Job](screenshots/glue-job.png)
+
+### Processed Parquet Files
+
+![Parquet](screenshots/processed-parquet.png)
+
+### Amazon Athena
+
+![Athena](screenshots/athena-query-results.png)
+
+---
+
+## Technologies
+
+- Python
+- SQL
+- Amazon S3
+- AWS Lambda
+- AWS Glue
+- Amazon Athena
+- IAM
+- CloudWatch
+
+---
+
+## Sample Athena Queries
+
+```sql
+SELECT * FROM sales LIMIT 10;
+
+SELECT SUM(amount)
+FROM sales;
+
+SELECT city, SUM(amount)
+FROM sales
+GROUP BY city;
+
+SELECT product, COUNT(*)
+FROM sales
+GROUP BY product;
 ```
 
-*(Replace the filename with your actual image name.)*
+---
+
+## Skills Demonstrated
+
+- Event-driven architecture
+- Serverless computing
+- Data cataloging
+- ETL pipeline development
+- Data transformation
+- SQL analytics
+- AWS IAM permissions
+- CloudWatch monitoring
 
 ---
 
-## 📸 Project Screenshots
+## Future Improvements
 
-* Amazon S3 Bucket
-* AWS Glue Crawler
-* AWS Glue Data Catalog
-* AWS Glue Studio ETL Job
-* AWS Glue Job Execution
-* Amazon Athena Query Results
-
----
-
-## 🌟 Project Highlights
-
-* Built a complete serverless ETL pipeline using AWS.
-* Converted CSV data into Parquet format.
-* Used AWS Glue Crawler to generate metadata automatically.
-* Performed data transformation using AWS Glue Studio.
-* Queried transformed data with Amazon Athena.
-* Organized the project with documentation, architecture, SQL scripts, and screenshots.
+- Amazon QuickSight Dashboard
+- EventBridge Scheduling
+- SNS Email Notifications
+- Partitioned Parquet Data
+- CI/CD using GitHub Actions
 
 ---
 
-## 💡 Skills Demonstrated
-
-* AWS Data Engineering
-* ETL Pipeline Development
-* Amazon S3
-* AWS Glue
-* AWS Glue Crawler
-* AWS Glue Studio
-* Amazon Athena
-* SQL
-* Parquet File Format
-* Git & GitHub
-
----
-
-## 📚 Learning Outcomes
-
-* Building an end-to-end ETL pipeline on AWS
-* Working with AWS Glue Crawler and Data Catalog
-* Transforming data using AWS Glue Studio
-* Converting CSV files into Parquet format
-* Querying data using Amazon Athena
-* Organizing and documenting a professional GitHub project
-
----
-
-## 🚀 Future Enhancements
-
-* Automate the pipeline using AWS Lambda and Amazon EventBridge.
-* Add data quality validation before transformation.
-* Store processed data in Amazon Redshift.
-* Create dashboards using Amazon QuickSight.
-* Monitor the pipeline with Amazon CloudWatch.
-* Orchestrate workflows using AWS Step Functions.
-
----
-
-## 👨‍💻 Author
+## Author
 
 **Sameer Singh**
 
-Aspiring AWS Data Engineer | Learning through hands-on cloud and data engineering projects.
+AWS | SQL | Python | Data Engineering
