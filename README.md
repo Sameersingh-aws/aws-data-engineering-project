@@ -57,7 +57,7 @@ The pipeline is event-driven using AWS Lambda, catalogs data with AWS Glue Crawl
       +-------------------------+
 
 
-![Archirecture](screenshots/architecture.jpeg)
+![Archirecture](screenshots/architecture.png)
 ---
 
 ## AWS Services Used
