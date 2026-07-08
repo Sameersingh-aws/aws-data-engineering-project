@@ -65,7 +65,7 @@ aws-data-engineering-project/
 
 ### AWS Lambda
 
-![Lambda](screenshots/lambda-succes.png.jpeg)
+![Lambda](screenshots/lambda-succes.jpeg)
 
 ### Glue Crawler
 
